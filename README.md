@@ -1,5 +1,7 @@
 # El Clásico: Siglo de Oro
 
+Este proyecto es para mostrar el historia de los clasicos de real madrid vs barcelona
+
 ```sh
 npm create astro@latest -- --template basics
 ```
