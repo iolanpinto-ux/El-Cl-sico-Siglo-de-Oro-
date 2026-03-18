@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# El Clásico: Siglo de Oro
 
 ```sh
 npm create astro@latest -- --template basics
