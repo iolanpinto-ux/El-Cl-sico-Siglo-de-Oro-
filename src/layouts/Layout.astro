@@ -1,7 +1,8 @@
 ---
+import { Icon } from "astro-icon/components";
 import "../styles/global.css";
 ---
----
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -12,20 +13,20 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>El Clasico: Siglo de Oro</title>
 	</head>
-	<body>
-		<header>
-			<p>El Clasico</p>
+	<body class="bg-black text-white">
+		<header class="flex justify-between  justify-stitems-center py-4 px-10 bg-gray-950">
+			<p class="text-yellow-600 text-3xl font-bold italic">El CLÁSICO</p>
 
-			<div>
+			<div class="flex gap-4 italic font-bold text-2x5 uppercase">
 				<a href="/">Inicio</a>
 				<a href="/estadisticas-e-historial">Historial</a>
 				<a href="/jugadores-legendarios">Jugadores</a>
 				<a href="/ultimas-noticias">Ultimas noticias</a>
 			</div>
 
-			<div>
-				<button>Boletos</button>
-				<a href="/registrarse">Registrarse</a>
+			<div class="flex gap-4 items-center">
+				<button class="font-bold bg-red-600 text-white px-4 py-3">BOLETOS</button>
+				<Icon name="icon1" size={20} class="text-white"/>
 			
 			</div>
 
