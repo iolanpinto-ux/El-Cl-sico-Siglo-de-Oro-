@@ -12,62 +12,67 @@ import { Icon } from 'astro-icon/components'
 		<div class="flex flex-col items-start">
 			<img src="/estadio.png" alt="">
 			<p class="font-bold bg-red-700 text-white px-4 py-5">Proximo encuentro</p>
-			<p>RIVALIDAD RENACIDA</p>
+			<p class="font-black text-5xl italic">LA RIVALIDAD <br class="text-yellow-300">RENACIDA.</p>
 
 			<div>
 				<div>
-					<div>
-						<div><Icon name="barcelona" size={50} /></div>
-						<p>VS</p>
-						<div>icon</div>
+					<div class="flex flex-wrap gap-12 items-center mb-12">
+						<div class="flex items-center"><Icon name="barcelona" size={50} /></div>
+						<div><p>VS</p></div>
+						 <div></div>
 					</div>
 
-					<div>
-						<p></p>
-						<div>
+					<div class="flex">
+						<p class="bg-amber-300 text-black px-1">COMIENZA EL INICIO EN</p>
+						<div class="flex gap-8 ml-4">
 							<div>
-								<p>04</p>
-								<p>D</p>
+								<p class="text-xl font-black">04</p>
+								<p class="text-xs">D</p>
 							</div>
 							<div>
-								<p>12</p>
-								<p>H</p>
+								<p class="text-xl font-black">12</p>
+								<p class="text-xs">H</p>
 							</div>
 							<div>
-								<p>45</p>
-								<p>M</p>
+								<p class="text-xl font-black">45</p>
+								<p class="text-xs">M</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div>
-					<button>Vista Previa</button>
-					<button>Asientos Asegurados</button>
+				<div class="flex gap-4 mt-8">
+					<button class="bg-primary text-on-primary px-10 py-4 font-headline font-extrabold text-xl tracking-tighter uppercase hover:bg-surface-bright transition-all active:scale-95">Vista Previa</button>
+					<button class="bg-surface-container-highest/50 backdrop-blur-md text-on-surface px-10 py-4 font-headline font-bold text-xl tracking-tighter uppercase border border-white/10 hover:bg-white/10 transition-all|">Asientos Asegurados</button>
 				</div>
 			</div>
 		</div>
 
-		<div>
-			<p>El Clásico del Siglo de Oro</p>
-			<p>El enfrentamiento más esperado del año</p>
-			<button>Comprar Boletos</button>
+		<div class="flex flex-col items-start mt-20 gap-4">
+			<p class="text-3xl font-bold text-yellow-300 italic">El Clásico del Siglo de Oro</p>
+			<p class="text-xs">El enfrentamiento más esperado del año</p>
+			<button class="bg-primary text-on-primary px-10 py-4 font-headline font-extrabold text-xl tracking-tighter uppercase hover:bg-surface-bright transition-all active:scale-95">Comprar Boletos</button>
 		</div>
 	</section>
 
 	<section>
-		<div>
-			<p>PORTADA</p>
+		<div class="flex items-end justify-between mb-16">
+			<p class="text-6xl font-black italic ">PAGINA DELANTERA</p>
 			<button>Ver todas las noticias</button>
 		</div>
 		<div>
-			<div>
-				<p>Analisis tactico</p>
-				<p>EL PARTIDO DE AJEDREZ DEL MEDIO CAMPO: XAVI VS ANCELOTTI.</p>
-				<p>
-					Analizando el dominio geometrico del 4-3-3 contra la
-					transicion de alta presion del rombo 4-4-2 antes del choque
-					en el Bernabeu
+			<div class="flex">
+				<div>
+					<img src="" alt="">
+					<div>
+						<p>Analisis tactico</p>
+						<p>EL PARTIDO DE AJEDREZ DEL MEDIO CAMPO: XAVI VS ANCELOTTI.</p>
+						<p>
+							Analizando el dominio geometrico del 4-3-3 contra la
+							transicion de alta presion del rombo 4-4-2 antes del choque
+							en el Bernabeu
+					</div>
+				</div>
 				</p>
 
 				<div>
