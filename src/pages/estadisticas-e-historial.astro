@@ -14,31 +14,32 @@ import Layout from "../layouts/Layout.astro"
     <section class="grid grid-cols-1 lg:grid-cols-3 gap-0 mb-20 bg-surface-container-low">
             <div class="p-12 border-r-0 lg:border-r border-outline-variant/10">
                     <p>FC BARCELONA        100</p>
-                    <p>VICTORIAS TOTALES</p>
+                    <p class="text-red-300">VICTORIAS TOTALES</p>
             </div>
             <div class="p-12 border-r-0 lg:border-r border-outline-variant/10">
-                    <p>254</p>
+                    <p class="text-yellow-500 text-5xl font-bold">254</p>
                     <p>PARTIDOS OFICIALES</p>
                     <p>52</p>
                     <p>EMPATES</p>
             </div>           
              <div class="p-12 border-r-0 lg:border-r border-outline-variant/10">
                     <p>REAL MADRID        102</p>
-                    <p>VICTORIAS TOTALES</p>
+                    <p class="text-red-300">VICTORIAS TOTALES</p>
             </div>
     </section>
 
     <section>
-        <div>
-            <div>
-                <p>MAXIMOS GOLEADORES DE TODOS LOS TIEMPOS</p>
+        <div class="flex flex-1">
+            <div class="flex col">
+                <p class="font-bold">MAXIMOS GOLEADORES DE TODOS LOS TIEMPOS</p>
                 <div>
                     <div>
                         <img src="" alt="">
                     </div>
                     <div>
-                        <p>MESSI</p>
-                        <p>GOLES: 26</p>
+                        <p class="uppercase text-yellow-300 text-xs">Barcelona</p>
+                        <p class="font-bold">LIONEL MESSI</p>
+                        <p class="text-red-500">GOLES: 26</p>
                     </div>
                 </div>
                 <div>
@@ -46,8 +47,9 @@ import Layout from "../layouts/Layout.astro"
                         <img src="" alt="">
                     </div>
                     <div>
-                        <p>CRISTIANO RONALDO</p>
-                        <p>GOLES: 18</p>
+                        <p class="uppercase text-gray-500 text-xs">Real Madrid</p>
+                        <p class="font-bold">CRISTIANO RONALDO</p>
+                        <p class="text-red-500">GOLES: 18</p>
                     </div>
                 </div>
                 <div>
@@ -55,8 +57,9 @@ import Layout from "../layouts/Layout.astro"
                         <img src="" alt="">
                     </div>
                     <div>
-                        <p>ALFREDO DI STEFANO</p>
-                        <p>GOLES: 18</p>
+                        <p class="uppercase text-gray-500 text-xs">Real Madrid</p>
+                        <p class="font-bold">ALFREDO DI STEFANO</p>
+                        <p class="text-red-500">GOLES: 18</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +70,7 @@ import Layout from "../layouts/Layout.astro"
                     <div>
                         <p>LA MAYOR VICTORIA</p>
                         <div>
-                            <p>11-1</p>
+                            <p class="text-yellow-500">11-1</p>
                             <p>REAL MADRID (1943)</p>
                         </div>
                     </div>
@@ -87,7 +90,7 @@ import Layout from "../layouts/Layout.astro"
                     <div>
                         <p>LA MAYORIA DE LAS ASISTENCIAS</p>
                         <div>
-                            <p>14 ASISTENCIAS</p>
+                            <p class="text-yellow-500">14 ASISTENCIAS</p>
                             <p>MESSI</p>
                         </div>
                     </div>
