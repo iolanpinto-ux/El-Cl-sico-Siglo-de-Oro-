@@ -56,7 +56,7 @@ import { Icon } from 'astro-icon/components'
 		</div>
 	</section>
 
-	<section>
+	<section class="py-24 bg-surface-container-low relative2">
 		<div class="flex items-end justify-between mb-16">
 			<p class="text-6xl font-black italic ">PAGINA DELANTERA</p>
 			<button class="text-yellow-600">Ver todas las noticias</button>
@@ -77,7 +77,7 @@ import { Icon } from 'astro-icon/components'
 				</div>
 			</div>
 
-			<div class="flex flex-col gap-4 ">
+			<div class="col-span-13 lg:col-span-4 flex flex-col gap-6 ">
 				<div class="flex bg-gray-500">
 					<p class="text-red-600 text-xs">Actualizaciones del jugador</p>
 					<p>BELLINGHAM DECLARADO APTO PARA REGRESAR AL CLASICO</p>
@@ -92,56 +92,58 @@ import { Icon } from 'astro-icon/components'
 		</div>
 	</section>
 
-	<section>
-		<div>
-			<div class="flex gap-4 flex-col">
-				<p class="text-5xl font-black font-headline">DOMINIO DE LA LIGA</p>
-				<p class="text-on-surface-variant font-medium leading-relaxed mb-10">Los dos gigantes vuelven a distanciarse del resto. Una lucha a dos bandas que define la elite del futbol español.</p>
+	<section class="py-32 bg-background">
+		<div class="flex flex-1 gap-15 container mx-auto px-10">
+			<div class="col-span-12 lg:col-span-4 py-18 items-center">
+				<p class="text-5xl font-black font-headline italic uppercase mb-8">DOMINIO DE LA LIGA</p>
+				<p class="text-on-surface-variant font-medium leading-relaxed mb-10 text-red-400">Los dos gigantes vuelven a distanciarse del resto. Una lucha a dos bandas que define la elite del futbol español.</p>
 				
-				<div>
-					<div>
-						<p>Barcelona</p>
+				<div class="space-y-6">
+					<div class="bg-surface-container p-6 border-l-4 border-primary-container">
+						<div class="flex justify-between items-center mb-2">
+							<p class="font-headline font-bold uppercase italic"> FC Barcelona</p>
+							<p class="font-headline font-bold uppercase italic">78 PUNTOS</p>
+						</div>
 					</div>
 
-					<div>
-						<p>78 PUNTOS</p>
-					</div>
-					<div>
-						<p>Real madrid</p>
-					</div>
-					
-					<div>
-						<p>76 PUNTOS</p>
+					<div class="bg-surface-container p-6 border-l-4 border-primary-container">
+						<div class="flex justify-between items-center mb-2">
+							<p class="font-headline font-bold uppercase italic">Real Madrid</p>
+							<p class="font-headline font-bold uppercase italic">76 PUNTOS</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			
-			<div>
+			<div class="items-center">
 				<img src="/tabla.png" alt="">
 			</div>
 		</div>
 	</section>
 
-	<section>
-		<div>
-			<div class="flex gap-4 justify-center">
-				<div>
-					<div class="bg-gray-600 px-20 py-10 font-bold">
-						<p class="text-yellow-300">Goles marcados</p>
-						<p>72/68</p>
-					</div>
+	<section class="py-24 bg-surface-container-lowest">
+		<div class="container mx-auto px-10">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+				<div class="bg-surface-container p-12 flex flex-col items-center text-center">
+						<p class="text-yellow-300 text-tertiary font-black tracking-widest uppercase mb-4 text-xs">Goles marcados</p>
+						<div class="flex items-end gap-2 mb-6">
+							<p class="text-6xl font-black font-headline italic">72</p>
+							<p class="text-white/20 text-3xl font-headline italic">/68</p>
+						</div>
 				</div>
-				<div>
-					<div class="bg-gray-600 px-20 py-10 font-bold">
-						<p class="text-yellow-300">Sabanas limpias</p>
-						<p>14/16</p>
-					</div>
+				<div class="bg-surface-container p-12 flex flex-col items-center text-center">
+						<p class="text-yellow-300 text-tertiary font-black tracking-widest uppercase mb-4 text-xs">Sabanas limpias</p>
+						<div class="flex items-end gap-2 mb-6">
+							<p class="text-6xl font-black font-headline italic">14</p>
+							<p class="text-white/20 text-3xl font-headline italic">/16</p>
+						</div>
 				</div>
-				<div>
-					<div class="bg-gray-600 px-20 py-10 font-bold">
-						<p class="text-yellow-300">Oportunidades Creadas</p>
-						<p>342/318</p>
-					</div>
+				<div class="bg-surface-container p-12 flex flex-col items-center text-center">
+						<p class="text-yellow-300 text-tertiary font-black tracking-widest uppercase mb-4 text-xs">Oportunidades Creadas</p>
+						<div class="flex items-end gap-2 mb-6">
+							<p class="text-6xl font-black font-headline italic">342</p>
+							<p class="text-white/20 text-3xl font-headline italic">/318</p>
+						</div>
 				</div>
 			</div>
 		</div>
