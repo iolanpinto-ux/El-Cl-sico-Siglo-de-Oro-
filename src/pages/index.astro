@@ -12,18 +12,18 @@ import { Icon } from 'astro-icon/components'
 		<img src="/estadio.png" class="absolute -z-1 w-full h-full left-0 top-0" alt="">
 		<div class="flex flex-col items-start flex-1">
 
-			<p class="font-bold bg-red-700 text-white px-4 py-5">Proximo encuentro</p>
+			<p class="font-bold bg-red-700 text-white px-1 py-1 uppercase">Proximo encuentro</p>
 			<p class="font-black text-5xl italic">LA RIVALIDAD <br class="text-yellow-300">RENACIDA.</p>
 
 			<div>
 				<div>
-					<div class="flex flex-wrap gap-12 items-center mb-12">
-						<div class="flex items-center bg-gray-500 px-4 py-4"><Icon name="barcelona" size={55} /></div>
+					<div class="flex flex-wrap flex-1 gap-12 items-center mb-12 py-6">
+						<div class="flex items-center bg-gray-800 px-4 py-4"><Icon name="barcelona" size={55} /></div>
 						<div><p>VS</p></div>
 						 <div></div>
 					</div>
 
-					<div class="flex">
+					<div class="flex flex-1">
 						<p class="bg-amber-300 text-black px-1">COMIENZA EL INICIO EN</p>
 						<div class="flex gap-8 ml-4">
 							<div>
@@ -56,7 +56,7 @@ import { Icon } from 'astro-icon/components'
 		</div>
 	</section>
 
-	<section class="py-24 bg-surface-container-low relative2">
+	<section class="py-24 bg-surface-container-low relative bg-gray-900">
 		<div class="flex items-end justify-between mb-16">
 			<p class="text-6xl font-black italic ">PAGINA DELANTERA</p>
 			<button class="text-yellow-600">Ver todas las noticias</button>
@@ -65,8 +65,8 @@ import { Icon } from 'astro-icon/components'
 
 		<div class="flex items-start flex-1 gap-5">
 			<div class="relative overflow-hidden pt-45"> 
-				<img src="/estado-index.png" class="absolute -z-10 w-full h-full top-0  left-0 object-cover" alt="">
-				<div class="flex flex-col gap-4 px-10 py-12">
+				<img src="/estado-index.png" class="absolute z-1 w-full h-full top-0  left-0 object-cover" alt="">
+				<div class="flex flex-col gap-4 px-10 py-12 z-10">
 					<p class="bg-amber-400 text-xs text-black px-3 py-1">Analisis tactico</p>
 					<p class="text-5x1 font-black">EL PARTIDO DE AJEDREZ DEL MEDIO CAMPO: XAVI VS ANCELOTTI.</p>
 					<p class="text-on-surface-variant max-w-xl font-medium leading-relaxed text-red-300">
@@ -92,9 +92,9 @@ import { Icon } from 'astro-icon/components'
 		</div>
 	</section>
 
-	<section class="py-32 bg-background">
+	<section class="py-32 bg-background items-center">
 		<div class="flex flex-1 gap-15 container mx-auto px-10">
-			<div class="col-span-12 lg:col-span-4 py-18 items-center">
+			<div class="col-span-12 lg:col-span-4 items-center">
 				<p class="text-5xl font-black font-headline italic uppercase mb-8">DOMINIO DE LA LIGA</p>
 				<p class="text-on-surface-variant font-medium leading-relaxed mb-10 text-red-400">Los dos gigantes vuelven a distanciarse del resto. Una lucha a dos bandas que define la elite del futbol español.</p>
 				
@@ -121,7 +121,7 @@ import { Icon } from 'astro-icon/components'
 		</div>
 	</section>
 
-	<section class="py-24 bg-surface-container-lowest">
+	<section class="py-24 bg-surface-container-lowest bg-gray-900">
 		<div class="container mx-auto px-20">
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
 				<div class="bg-surface-container p-12 flex flex-col items-center text-center bg-[#1a1a1a] border border-gray-800">

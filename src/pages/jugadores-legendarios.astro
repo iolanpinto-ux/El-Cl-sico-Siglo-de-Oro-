@@ -1,12 +1,13 @@
 ---
+import Tarjeta from "../components/Tarjeta.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
     <section class="relative overflow-hidden flex item-end px-25 py-50">
-        <img src="/zidane.png" class="absolute -z-1 w-full h-full left-0 top-0" alt="" />
+        <img src="/zidane.png" class="absolute -z-1 w-full h-full left-0 top-0 object-cover" alt="" />
         <div class="relative z-10 px-10 pb-20 w-full max-w-7xl mx-auto grid grid-cols-12 gap-8 items-end">
-            <div class="flex flex-1 col-span-8">
+            <div class="flex flex-1 col-span-8 gap-50">
                 <div>
                     <p class="bg-yellow-500 text-black text-xs font-bold px-3 py-1">LEYENDA DE LA SEMANA</p>
                     <p class="font-bold text-8xl italic">ZINEDINE ZIDANE</p>
@@ -56,48 +57,12 @@ import Layout from "../layouts/Layout.astro";
 
     <section class="py-24 px-10 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-outline-variant/20">
-            <div>
-                <img src="/messi.png" alt="">
-                <div>
-                    <p class="text-xs text-sky-400">FC BARCELONA</p>
-                    <p class="font-bold uppercase text-3xl italic">Lionel Messi</p>
-                </div>
-            </div>
-            <div>
-                <img src="/raul.png" alt="">
-                <div>
-                    <p class="text-xs text-yellow-500">REAL MADRID</p>
-                    <p class="font-bold uppercase text-3xl italic">Raúl González</p>
-                </div>
-            </div>
-            <div>
-                <img src="/ronaldinho.png" alt="">
-                <div>
-                    <p class="text-xs text-sky-400">FC BARCELONA</p>
-                    <p class="font-bold uppercase text-3xl italic">Ronaldo</p>
-                </div>
-            </div>
-            <div>
-                <img src="/cristiano.png" alt="">
-                <div>
-                    <p class="text-xs text-yellow-500">REAL MADRID</p>
-                    <p class="font-bold uppercase text-3xl italic">Cristiano Ronaldo</p>
-                </div>
-            </div>
-            <div>
-                <img src="/johan cruyff.png" alt="">
-                <div>
-                    <p class="text-xs text-sky-400">FC BARCELONA</p>
-                    <p class="font-bold uppercase text-3xl italic">Johan Cruyff</p>
-                </div>
-            </div>
-            <div>
-                <img src="/di stefano.png" alt="">
-                <div>
-                    <p class="text-xs text-yellow-500">REAL MADRID</p>
-                    <p class="font-bold uppercase text-3xl italic">Alfredo Di Stéfano</p>
-                </div>
-            </div>
+            <Tarjeta imagen="/messi.png" equipo="FC BARCELONA" nombre="Lionel Messi" />
+            <Tarjeta imagen="/raul.png" equipo="REAL MADRID" nombre="Raúl González" />
+            <Tarjeta imagen="/ronaldinho.png" equipo="FC BARCELONA" nombre="Ronaldo" />
+            <Tarjeta imagen="/cristiano.png" equipo="REAL MADRID" nombre="Cristiano Ronaldo" />
+            <Tarjeta imagen="/johan cruyff.png" equipo="FC BARCELONA" nombre="Johan Cruyff" />
+            <Tarjeta imagen="/di stefano.png" equipo="REAL MADRID" nombre="Alfredo Di Stéfano" />
         </div>
     </section>
     <section class="py-24 bg-surface-container-lowest">

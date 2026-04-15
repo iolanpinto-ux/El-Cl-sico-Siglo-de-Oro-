@@ -1,0 +1,13 @@
+---
+const imagen = Astro.props.imagen
+const equipo = Astro.props.equipo
+const nombre = Astro.props.nombre
+---
+
+<div>
+     <img src={imagen} alt="">
+         <div>
+             <p class="text-xs text-yellow-500">{equipo}</p>
+             <p class="font-bold uppercase text-3xl italic">{nombre}</p>
+         </div>
+</div>
