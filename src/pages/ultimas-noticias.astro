@@ -3,28 +3,32 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    <section>
+    <section class="relative overflow-hidden flex px-32 py-30">
         <div class="flex flex-1 px-15 py-15 gap-15 justify-center">
-            <div>
-                <p class="bg-red-500 font-bold">Análisis de última hora</p>
-                <p class="text-4xl font-bold">
-                    LA FRICCIÓN TÁCTICA DEL SIGLOLA FRICCIÓN TÁCTICA DEL SIGLO
+            <img src="/campo.png" class="absolute -z-1 w-full h-full left-0 top-0 grayscale opacity-10 object-cover" alt="">
+            <div class="py-20">
+                <p class="bg-red-500 font-bold uppercase inline-flex py-2 px-3">Análisis de última hora</p>
+                <p class="text-7xl font-bold py-5">
+                    LA FRICCIÓN TÁCTICA DEL SIGLO
                 </p>
-                <p class="text-xs text-red-400">
+                <p class="text-xl text-red-400">
                     La intensa presión del mediocampo de Xavi contra la
                     verticalidad letal del Madrid de Ancelotti. Cómo el espacio
                     se convierte en el arma definitiva en el 256º encuentro.
                 </p>
             </div>
-            <div>
+            <div class="borde border-gray-900 bg-[#1a1a1a] py-50 px-30">
                 <div>
-                    <p>256</p>
+                    <p class="text-5xl font-bold text-yellow-500 opacity-30 italic py-5">256</p>
                 </div>
-                <p>INFORMACION DEL DÍA DEL PARTIDO</p>
+                <p class="font-bold">INFORMACION DEL DÍA DEL PARTIDO</p>
                 <div>
-                    <p>PROBABILIDADES DE GANAR</p>
-                    <p>BARCELONA 45% - REAL MADRID 55%</p>
+                    <p class="text-xs text-yellow-500">PROBABILIDADES DE GANAR</p>
                     <img src="/probabilidad.png" alt="" />
+                    <div class="flex gap-12 py-5">
+                        <p>FC 45%</p>
+                        <p>RMA 52%</p>
+                    </div>
                 </div>
             </div>
         </div>
