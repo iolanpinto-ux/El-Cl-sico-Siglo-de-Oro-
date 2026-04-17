@@ -1,6 +1,7 @@
 ---
 import Tarjeta from "../components/Tarjeta.astro";
 import Layout from "../layouts/Layout.astro";
+import { jugadores } from "../data/jugadores.ts";
 ---
 
 <Layout>
@@ -9,7 +10,7 @@ import Layout from "../layouts/Layout.astro";
         <div class="relative z-10 px-10 pb-20 w-full max-w-7xl mx-auto gap-8 items-end">
             <div class="flex flex-1 col-span-8 gap-50">
                 <div>
-                    <p class="bg-yellow-500 text-black text-xs font-bold px-3 py-1">LEYENDA DE LA SEMANA</p>
+                    <p class="bg-yellow-500 text-black text-xs font-bold px-3 py-1 inline-flex">LEYENDA DE LA SEMANA</p>
                     <p class="font-bold text-8xl italic">ZINEDINE ZIDANE</p>
                     <div class="flex gap-12 py-8">
                         <div>
@@ -26,9 +27,9 @@ import Layout from "../layouts/Layout.astro";
                         </div>
                     </div>
                 </div>
-                <div class="col-span-4 glass-panel p-8 border-l-4 border-tertiary border-gray-800 bg-gray-900">
-                    <p class="text-yellow-500 font-bold uppercase">Lo más destacado de mi carrera</p>
-                    <p class="font-bold">
+                <div class="col-span-4 glass-panel p-8 border-l-4 border-yellow-500 bg-gray-900">
+                    <p class="text-yellow-500 font-bold uppercase text-4xl">Lo más destacado de mi carrera</p>
+                    <p class="font-bold uppercase text-2xl italic py-4">
                         La volea de Glasgow: El gol más estético en la historia
                         de las finales de la Liga de Campeones.
                     </p>
@@ -57,34 +58,35 @@ import Layout from "../layouts/Layout.astro";
 
     <section class="py-24 px-10 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-outline-variant/20">
-            <Tarjeta imagen="/messi.png" equipo="FC BARCELONA" nombre="Lionel Messi" />
-            <Tarjeta imagen="/raul.png" equipo="REAL MADRID" nombre="Raúl González" />
-            <Tarjeta imagen="/ronaldinho.png" equipo="FC BARCELONA" nombre="Ronaldo" />
-            <Tarjeta imagen="/cristiano.png" equipo="REAL MADRID" nombre="Cristiano Ronaldo" />
-            <Tarjeta imagen="/johan cruyff.png" equipo="FC BARCELONA" nombre="Johan Cruyff" />
-            <Tarjeta imagen="/di stefano.png" equipo="REAL MADRID" nombre="Alfredo Di Stéfano" />
+            {jugadores.map((leyenda) => (
+                <Tarjeta
+                    nombre={leyenda.nombre}
+                    equipo={leyenda.equipo}
+                    imagen={leyenda.imagen}
+                />
+            ))}
         </div>
     </section>
     <section class="py-24 bg-surface-container-lowest">
         <div class="max-w-7xl mx-auto px-10">
             <div class="flex items-end justify-between">
-                <div>
-                 <p class="font-bold text-4xl italic py-5">LA RIVALIDAD <br>EN CIFRAS</p>
+                <div class="py-15">
+                 <p class="font-bold text-6xl italic py-5">LA RIVALIDAD <br>EN CIFRAS</p>
                  <p class="text-xs text-red-300">Siglos de competencia se redujeron al desempeño de élite de sus íconos más legendarios. <br> Comparando las épocas de dominio.</p>
                 </div>
-                <div>
+                <div class="py-15">
                     <button class="font-bold">VER TODOS LOS ANALISIS</button>
                 </div>
             </div>
             <div class="grid grid-cols-4 grid-rows-2 gap-4 h-[600px]">
                 <div class="col-span-2 row-span-2 bg-surface-container p-12 flex flex-col justify-between border-l-8 border-secondary-container bg-[#1a1a1a] border border-gray-800">
                     <div>
-                        <p class="font-bold bg-blue-700 px-3 py-1">FACTOR DE DOMINANCIA</p>
+                        <p class="font-bold bg-blue-700 px-3 py-1 inline-flex">FACTOR DE DOMINANCIA</p>
                         <p class="font-bold italic text-4xl mt-6">LA EPOCA DORADA  <br> DEL BARCA</p>
                     </div>
                     <div class="flex items-end gap-4">
                         <div>
-                            <p class="text-6xl font-bold text-sky-400">14</p> 
+                            <p class="text-9xl font-bold text-sky-400">14</p> 
                         </div>
                         <div> 
                             <p class="text-xs text-gray-500">TROFEOS EN 4 AÑOS</p> 
@@ -94,41 +96,43 @@ import Layout from "../layouts/Layout.astro";
                 <div class="col-span-2 bg-surface-container p-8 border-t-8 border-tertiary bg-[#1a1a1a] border border-gray-800">
                     <div>
                         <p class="text-yellow-500">MAS GOLES EN EL CLASICO</p>
+
                         <div>
-                            <div>
+                            <div class="flex">
                                 <p>MESSI</p>
-                                <div>
-                                    <p>26 GOLES</p>
+                                <div class="flex-1 h-2 bg-gray-600">
+                                    <div class="w-1/10 h-full bg-red-500 items-center"></div>
                                 </div>
+                                <p>26 GOLES</p>
                             </div>
-                        </div>
-                    </div>
-                    <div>   
-                        <div>
-                            <p>CRISTIANO RONALDO</p>
-                            <div>
+
+                            <div class="flex">
+                                <p>CRISTIANO RONALDO</p>
+                                <div class="flex-1 h-2 bg-ray-600">
+                                    <div class="w-full h-full bg-red-500 items-center"></div>
+                                </div>
                                 <p>18 GOLES</p>
                             </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <p>DI STÉFANO</p>
-                            <div>
+
+                            <div class="flex">
+                                <p>DI STÉFANO</p>
+                                <div class="flex-1 h-2 bg-gra-600">
+                                    <div class="w-8/10 h-full bg-red-500 items-center"></div>
+                                </div>
                                 <p>18 GOLES</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1 bg-primary-container p-8 flex flex-col justify-center items-center text-center bg-[#1a1a1a] border border-gray-800">
+                <div class="col-span-1 bg-primary-container p-8 flex flex-col justify-center items-center text-center bg-red-500 border border-gray-800">
                     <p>ESTRELLAS</p>
-                    <p>57</p>
+                    <p class="font-bold text-3xl">57</p>
                     <p>NOMINACIONES AL BALÓN DE ORO</p>
                 </div>
                 <div class="col-span-1 bg-surface-container p-8 flex flex-col justify-center bg-[#1a1a1a] border border-gray-800">
-                    <p>RACHA MÁS LARGA</p>
-                    <p>7 VICTORIAS</p>
-                    <p>REAL MADRID (1962-65)</p>
+                    <p class="text-xs text-gray-500 font-bold">RACHA MÁS LARGA</p>
+                    <p class="font-bold text-3xl">7 VICTORIAS</p>
+                    <p class="text-xs text-gray-500 font-bold">REAL MADRID (1962-65)</p>
                 </div>
             </div>
         </div>
