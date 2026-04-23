@@ -5,56 +5,105 @@ import { jugadores } from "../data/jugadores.ts";
 ---
 
 <Layout>
-    <section class="relative overflow-hidden flex item-end px-25 py-50">
-        <img src="/zidane.png" class="absolute -z-1 w-full h-full left-0 top-0 object-cover" alt="" />
-        <div class="relative z-10 px-10 pb-20 w-full max-w-7xl mx-auto gap-8 items-end">
-            <div class="flex flex-1 col-span-8 gap-50">
-                <div>
-                    <p class="bg-yellow-500 text-black text-xs font-bold px-3 py-1 inline-flex">LEYENDA DE LA SEMANA</p>
-                    <p class="font-bold text-8xl italic">ZINEDINE</p>
-                    <p class="font-bold text-8xl italic text-transparent [text-stroke:1px_rgba(255,255,255,0.4)] [-webkit-text-stroke:1px_rgba(255,255,255,0.4)]">ZIDANE </p>
-                    <div class="flex gap-12 py-8">
-                        <div>
-                            <p class="text-xs text-yellow-500 font-bold">APARICIONES</p>
-                            <p class="font-bold text-2xl">227</p>
-                        </div>
-                        <div>
-                            <p class="text-xs text-yellow-500 font-bold">OBJETIVOS</p>
-                            <p class="font-bold text-2xl">49</p>
-                        </div>
-                        <div>
-                            <p class="text-xs text-yellow-500 font-bold">TITULOS</p>
-                            <p class="font-bold text-2xl">6</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-4 glass-panel p-8 border-l-4 border-yellow-500 bg-gray-900">
-                    <p class="text-yellow-500 font-bold uppercase">Lo más destacado de mi carrera</p>
-                    <p class="font-bold uppercase text-2xl italic py-4">
-                        La volea de Glasgow: El gol más estético en la historia
-                        de las finales de la Liga de Campeones.
-                    </p>
-                    <p class="text-xs text-red-400">
-                        Un maestro del balón cuya elegancia definió una era de
-                        los Galácticos del Real Madrid. Zidane no era solo un
-                        jugador; era un director de orquesta en el terreno de
-                        juego.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <section class="">
+        <div class="relative min-h-screen bg-black flex items-end justify-center overflow-hidden font-sans">
+  
+  <img 
+    src="/zidane.png" 
+    class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale" 
+    alt="Zinedine Zidane"
+  />
+
+  <div class="relative z-10 w-full max-w-7xl px-12 pb-20 flex flex-col gap-12">
+    
+    <div class="flex flex-col gap-4">
+      <div class="flex items-center gap-4">
+        <p class="bg-[#ffcc00] text-black text-[10px] font-bold px-2 py-0.5 uppercase italic">
+          Leyenda de la semana
+        </p>
+        <div class="h-[1px] bg-gray-500 w-12"></div>
+      </div>
+
+      <div class="flex flex-col leading-[0.8]">
+        <p class="text-white text-8xl font-black italic uppercase tracking-tighter">
+          ZINEDINE
+        </p>
+        <p class="text-transparent text-8xl font-black italic uppercase tracking-tighter" style="-webkit-text-stroke: 1px rgba(255,255,255,0.4)">
+          ZIDANE
+        </p>
+      </div>
+    </div>
+
+    <div class="flex gap-16">
+      <div class="flex flex-col gap-1">
+        <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest">Apariciones</p>
+        <p class="text-white text-4xl font-bold italic">227</p>
+      </div>
+      <div class="flex flex-col gap-1">
+        <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest">Goles</p>
+        <p class="text-white text-4xl font-bold italic">49</p>
+      </div>
+      <div class="flex flex-col gap-1">
+        <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest">Títulos</p>
+        <p class="text-white text-4xl font-bold italic">6</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute right-24 bottom-24 z-20 w-80 bg-[#121212]/90 border-l-2 border-[#ffcc00] p-8 flex flex-col gap-6 backdrop-blur-sm">
+    <div class="flex flex-col gap-3">
+      <p class="text-[#ffcc00] text-[9px] font-bold uppercase tracking-widest">Lo más destacado de mi carrera</p>
+      <p class="text-white text-xl font-bold leading-tight">
+        La volea de Glasgow: El gol más estético en la historia de las finales de la Liga de Campeones.
+      </p>
+      <p class="text-gray-400 text-xs leading-relaxed">
+        Un maestro del balón cuya elegancia definió una era de los Galácticos del Real Madrid. Zidane no era solo un jugador; era un director de orquesta en el terreno de juego.
+      </p>
+    </div>
+    
+    <button class="bg-white text-black text-[10px] font-black uppercase italic py-3 px-6 hover:bg-[#ffcc00] transition-colors">
+      Explora tu carrera
+    </button>
+  </div>
+
+</div>
     </section>
-    <section class="bg-surface-container-low py-8 sticky top-20 z-40">
-        <div class="max-w-7xl mx-auto px-10 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="flex gap-4">
-                <button class="bg-tertiary text-on-tertiary px-8 py-3 font-black text-xs tracking-widest bg-gray-500">TODAS LAS LEYENDAS</button>
-                <button class="bg-surface-container-highest text-white/60 hover:text-white px-8 py-3 font-black text-xs tracking-widest transition-colors bg-gray-500">FC BARCELONA</button> 
-                <button class="bg-surface-container-highest text-white/60 hover:text-white px-8 py-3 font-black text-xs tracking-widest transition-colors bg-gray-500">REAL MADRID</button>
-            </div>
-            <div>
-                <p>TODAS LAS EPOCAS</p>
-            </div>
-        </div>
+    <section>
+        <div class="bg-[#0f0f0f] w-full p-8 flex justify-center items-center font-sans border-b border-white/5">
+  
+  <div class="max-w-7xl w-full flex flex-col md:flex-row justify-between items-center gap-8">
+    
+    <div class="flex gap-2">
+      <button class="bg-[#eab308] text-black px-6 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-[#facc15] transition-colors">
+        TODAS LAS LEYENDAS
+      </button>
+      
+      <button class="bg-[#1c1c1c] text-gray-400 px-6 py-3 text-[10px] font-black uppercase tracking-widest hover:text-white transition-colors">
+        FC BARCELONA
+      </button>
+      
+      <button class="bg-[#1c1c1c] text-gray-400 px-6 py-3 text-[10px] font-black uppercase tracking-widest hover:text-white transition-colors">
+        REAL MADRID
+      </button>
+    </div>
+
+    <div class="flex items-center gap-6">
+      <p class="text-gray-500 text-[10px] font-bold uppercase tracking-[0.2em]">
+        FILTRAR POR ÉPOCA:
+      </p>
+      
+      <div class="flex items-center gap-4 cursor-pointer group">
+        <p class="text-[#eab308] text-[10px] font-black uppercase tracking-widest group-hover:text-[#facc15]">
+          TODAS LAS ÉPOCAS
+        </p>
+        <svg class="w-4 h-4 text-[#eab308] group-hover:text-[#facc15]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</div>
     </section>
 
     <section class="py-24 px-10 max-w-7xl mx-auto">
@@ -68,74 +117,93 @@ import { jugadores } from "../data/jugadores.ts";
             ))}
         </div>
     </section>
-    <section class="py-24 bg-surface-container-lowest">
-        <div class="max-w-7xl mx-auto px-10">
-            <div class="flex items-end justify-between">
-                <div class="py-15">
-                 <p class="font-bold text-6xl italic py-5">LA RIVALIDAD <br>EN CIFRAS</p>
-                 <p class="text-xs text-red-300">Siglos de competencia se redujeron al desempeño de élite de sus íconos más legendarios. <br> Comparando las épocas de dominio.</p>
-                </div>
-                <div class="py-15">
-                    <button class="font-bold">VER TODOS LOS ANALISIS</button>
-                </div>
+    <section>
+        <div class="bg-[#0f0f0f] min-h-screen p-12 flex flex-col items-center justify-center font-sans">
+  
+  <div class="max-w-6xl w-full flex justify-between items-end mb-10">
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col leading-none">
+        <p class="text-white text-5xl font-black italic uppercase tracking-tighter">LA RIVALIDAD</p>
+        <p class="text-[#ffcc00] text-5xl font-black italic uppercase tracking-tighter">EN CIFRAS</p>
+      </div>
+      <p class="text-gray-500 text-sm max-w-sm leading-tight">
+        Siglos de competencia se redujeron al desempeño de élite de sus íconos más legendarios. Comparando las épocas de dominio.
+      </p>
+    </div>
+    <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest border-b border-[#ffcc00] pb-1 cursor-pointer hover:text-white hover:border-white transition-colors">
+      Ver todos los análisis
+    </p>
+  </div>
+
+  <div class="max-w-6xl w-full flex flex-col md:flex-row gap-4">
+    
+    <div class="flex-[1.2] bg-[#1a1a1a] p-10 flex flex-col justify-between min-h-[450px] border-l-4 border-[#00529b] relative overflow-hidden">
+      <div class="flex flex-col gap-6">
+        <p class="bg-[#00529b] text-white text-[9px] font-black px-3 py-1 uppercase tracking-widest self-start">
+          Factor de dominancia
+        </p>
+        <p class="text-white text-5xl font-black italic uppercase leading-[0.9] tracking-tighter max-w-xs">
+          LA ÉPOCA DORADA DEL BARÇA
+        </p>
+      </div>
+      
+      <div class="flex items-baseline gap-4">
+        <p class="text-white text-9xl font-black italic leading-none">14</p>
+        <p class="text-gray-500 text-sm font-bold uppercase tracking-widest">Trofeos en 4 años</p>
+      </div>
+    </div>
+
+    <div class="flex-1 flex flex-col gap-4">
+      
+      <div class="bg-[#1a1a1a] p-8 border-t-2 border-[#ffcc00] flex flex-col gap-6">
+        <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest">Más goles en el Clásico</p>
+        
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-2">
+            <div class="flex justify-between items-end">
+              <p class="text-white text-xs font-bold uppercase">Messi</p>
+              <p class="text-white text-sm font-black italic">26</p>
             </div>
-            <div class="grid grid-cols-4 grid-rows-2 gap-4 h-[600px]">
-                <div class="col-span-2 row-span-2 bg-surface-container p-12 flex flex-col justify-between border-l-8 border-secondary-container bg-[#1a1a1a] border border-gray-800">
-                    <div>
-                        <p class="font-bold bg-blue-700 px-3 py-1 inline-flex">FACTOR DE DOMINANCIA</p>
-                        <p class="font-bold italic text-4xl mt-6">LA EPOCA DORADA  <br> DEL BARCA</p>
-                    </div>
-                    <div class="flex items-end gap-4">
-                        <div>
-                            <p class="text-9xl font-bold text-sky-400">14</p> 
-                        </div>
-                        <div> 
-                            <p class="text-xs text-gray-500">TROFEOS EN 4 AÑOS</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-2 bg-surface-container p-8 border-t-8 border-tertiary bg-[#1a1a1a] border border-gray-800">
-                    <div>
-                        <p class="text-yellow-500">MAS GOLES EN EL CLASICO</p>
-
-                        <div>
-                            <div class="flex">
-                                <p>MESSI</p>
-                                <div class="flex-1 h-2 bg-gray-600">
-                                    <div class="w-1/10 h-full bg-red-500 items-center"></div>
-                                </div>
-                                <p>26 GOLES</p>
-                            </div>
-
-                            <div class="flex">
-                                <p>CRISTIANO RONALDO</p>
-                                <div class="flex-1 h-2 bg-ray-600">
-                                    <div class="w-full h-full bg-red-500 items-center"></div>
-                                </div>
-                                <p>18 GOLES</p>
-                            </div>
-
-                            <div class="flex">
-                                <p>DI STÉFANO</p>
-                                <div class="flex-1 h-2 bg-gra-600">
-                                    <div class="w-8/10 h-full bg-red-500 items-center"></div>
-                                </div>
-                                <p>18 GOLES</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-1 bg-primary-container p-8 flex flex-col justify-center items-center text-center bg-red-500 border border-gray-800">
-                    <p>ESTRELLAS</p>
-                    <p class="font-bold text-3xl">57</p>
-                    <p>NOMINACIONES AL BALÓN DE ORO</p>
-                </div>
-                <div class="col-span-1 bg-surface-container p-8 flex flex-col justify-center bg-[#1a1a1a] border border-gray-800">
-                    <p class="text-xs text-gray-500 font-bold">RACHA MÁS LARGA</p>
-                    <p class="font-bold text-3xl">7 VICTORIAS</p>
-                    <p class="text-xs text-gray-500 font-bold">REAL MADRID (1962-65)</p>
-                </div>
+            <div class="h-1 w-full bg-white/10">
+              <div class="h-full w-full bg-[#00529b]"></div>
             </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div class="flex justify-between items-end">
+              <p class="text-white text-xs font-bold uppercase">Di Stéfano</p>
+              <p class="text-white text-sm font-black italic">18</p>
+            </div>
+            <div class="h-1 w-full bg-white/10">
+              <div class="h-full w-[70%] bg-[#ffcc00]"></div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div class="flex justify-between items-end">
+              <p class="text-white text-xs font-bold uppercase">C. Ronaldo</p>
+              <p class="text-white text-sm font-black italic">18</p>
+            </div>
+            <div class="h-1 w-full bg-white/10">
+              <div class="h-full w-[70%] bg-[#ffcc00]"></div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="flex gap-4 flex-1">
+        <div class="flex-1 bg-[#a51e2d] p-6 flex flex-col items-center justify-center text-center gap-2">
+          <p class="text-white text-4xl font-black italic tracking-tighter leading-none uppercase">Estrella</p>
+          <p class="text-white text-2xl font-black">57</p>
+          <p class="text-white/60 text-[8px] font-bold uppercase tracking-widest leading-tight">Nominaciones al Balón de Oro</p>
+        </div>
+        <div class="flex-1 bg-[#1a1a1a] p-6 flex flex-col justify-center gap-1">
+          <p class="text-gray-500 text-[8px] font-bold uppercase tracking-widest">Racha más larga</p>
+          <p class="text-white text-2xl font-black italic uppercase leading-none">7 Victorias</p>
+          <p class="text-gray-500 text-[8px] font-bold uppercase mt-2">Real Madrid (1962-65)</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
     </section>
 </Layout>

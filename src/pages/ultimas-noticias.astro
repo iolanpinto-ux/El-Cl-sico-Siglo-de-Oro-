@@ -3,123 +3,231 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    <section class="relative overflow-hidden flex px-32 py-30">
-        <div class="flex flex-1 px-10 py-15 gap-15 justify-center">
-            <img src="/campo.png" class="absolute -z-1 w-full h-full left-0 top-0 grayscale opacity-10 object-cover" alt="">
-            <div class="py-20">
-                <p class="bg-red-500 font-bold uppercase inline-flex py-2 px-3">Análisis de última hora</p>
-                <p class="text-7xl font-bold py-5">
-                    LA FRICCIÓN TÁCTICA DEL SIGLO
-                </p>
-                <p class="text-xl text-red-400">
-                    La intensa presión del mediocampo de Xavi contra la
-                    verticalidad letal del Madrid de Ancelotti. Cómo el espacio
-                    se convierte en el arma definitiva en el 256º encuentro.
-                </p>
-            </div>
-            <div class="borde border-gray-900 bg-[#1a1a1a] py-50 px-30">
-                <div>
-                    <p class="text-5xl font-bold text-yellow-500 opacity-30 italic py-5">256</p>
-                </div>
-                <p class="font-bold py-5">INFORMACION DEL DÍA DEL PARTIDO</p>
-                <div>
-                    <p class="text-xs text-yellow-500 py-5">PROBABILIDADES DE GANAR</p>
-                    <img src="/probabilidad.png" alt="" />
-                    <div class="flex gap-12">
-                        <p>FC 45%</p>
-                        <p>RMA 52%</p>
-                    </div>
-                </div>
-            </div>
+    <section>
+        <div class="relative min-h-screen bg-[#0a0a0a] flex items-center justify-center p-12 overflow-hidden font-sans">
+  
+  <img 
+    src="/campo.png" 
+    class="absolute inset-0 w-full h-full object-cover opacity-20" 
+    alt="Fondo Táctico"
+  />
+
+  <div class="relative z-10 w-full max-w-7xl flex flex-col lg:flex-row gap-16 items-center">
+    
+    <div class="flex-1 flex flex-col gap-8 md:items-start items-center text-center md:text-left">
+      
+      <div class="flex items-center gap-3 bg-[#a51e2d] text-white px-3 py-1 self-center md:self-start">
+        <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+        <p class="text-[10px] font-black uppercase tracking-widest italic">Análisis Exclusivo</p>
+      </div>
+
+      <div class="flex flex-col gap-2 leading-[0.85] w-full max-w-2xl">
+        <p class="text-white text-7xl font-black italic uppercase tracking-tighter">
+          LA FRICCIÓN TÁCTICA
+        </p>
+        <p class="text-[#ffcc00] text-7xl font-black italic uppercase tracking-tighter">
+          DEL SIGLO
+        </p>
+      </div>
+
+      <p class="text-gray-300 text-sm leading-relaxed max-w-lg">
+        Una inmersión profunda en la presión de alta intensidad del mediocampo de Xavi contra la verticalidad clínica del Madrid de Ancelotti. Cómo el espacio se convierte en el arma definitiva en el 256º encuentro.
+      </p>
+
+      <button class="bg-[#ffb3b3] text-[#0a0a0a] px-10 py-3.5 font-bold uppercase italic text-sm hover:bg-white transition-all flex items-center gap-2 mt-4">
+        Leer análisis completo 
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </button>
+
+    </div>
+
+    <div class="w-full lg:w-96 flex flex-col gap-6 bg-[#1a1a1a]/90 border border-gray-800 p-10 backdrop-blur-sm self-center lg:self-stretch">
+      
+      <div class="flex flex-col gap-2 mb-4">
+        <p class="text-gray-600 text-7xl font-black italic leading-none">256</p>
+        <p class="text-white text-[10px] font-black uppercase tracking-[0.2em] leading-tight">Inteligencia de Partido</p>
+      </div>
+
+      <div class="flex flex-col gap-2 mt-auto">
+        <p class="text-[#ffcc00] text-[9px] font-bold uppercase tracking-widest">Probabilidad de Victoria</p>
+        
+        <div class="w-full h-1 bg-white/10 flex overflow-hidden relative group">
+          <div class="bg-[#a51e2d] w-[48%] h-full"></div>
+          <div class="bg-gray-800 h-full w-4px relative z-10 flex items-center justify-center">
+            <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+          </div>
+          <div class="bg-[#00529b] flex-1 h-full"></div>
         </div>
+
+        <div class="flex justify-between text-white/70 text-[9px] font-bold uppercase">
+          <p>FCB 48%</p>
+          <p>RMA 52%</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2 mt-6">
+        <p class="text-[#ffcc00] text-[9px] font-bold uppercase tracking-widest">Enfrentamiento Clave</p>
+        <p class="text-white text-base font-black italic uppercase leading-none tracking-tight">VINI JR. VS. ARAUJO</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
     </section>
-    <section class="flex items-center py-25 px-30">
-        <div>
-            <div class="py-20">
-                <p class="font-bold text-5xl">Últimas actualizaciones</p>
-            </div>
-            <div class="flex justify-items-center gap-0.5">
-                <div class="flex-1 border border-gray-900 bg-[#1a1a1a] py-30 px-20">
-                    <p class="text-yellow-500 font-bold">TRASPASOS</p>
-                    <p class="font-bold text-3xl">
-                        La búsqueda del próximo "niño prodigio" se intensifica.
-                    </p>
-                    <div>
-                        <img src="/noticias1.png" alt="" />
-                    </div>
-                    <p class="text-red-400">
-                        Ojeadores de ambos equipos fueron vistos anoche en
-                        Lisboa siguiendo de cerca a la joven promesa de 19 años,
-                        apodada el próximo general del mediocampo.
-                    </p>
-                </div>
-                <div class="flex-1 border border-gray-900 bg-[#1a1a1a] py-30 px-20">
-                    <p class="text-yellow-500 font-bold">HISTORIA</p>
-                    <p class="font-bold text-3xl">Revisitando la guerra de la Liga de Campeones de 2011</p>
-                    <div>
-                        <img src="/noticias2.png" alt="" />
-                    </div>
-                    <p class="text-red-400">
-                        Han pasado doce años desde la maratón de cuatro partidos
-                        más tóxica y tácticamente brillante en la historia de la
-                        rivalidad.
-                    </p>
-                </div>
-                <div class="flex-1 border border-gray-900 bg-[#1a1a1a] py-30 px-20">
-                    <p class="text-yellow-500 font-bold">INFORME PREVIO AL PARTIDO</p>
-                    <p class="font-bold text-3xl">Baja importante para la defensa del Madrid.</p>
-                    <div>
-                        <img src="/noticias3.png" alt="" />
-                    </div>
-                    <p class="text-red-400">
-                        Una lesión muscular de última hora obliga a los
-                        visitantes a reorganizar su equipo mientras se preparan
-                        para el rugido del
-                    </p>
-                </div>
-            </div>
+    <section class="">
+        <div class="bg-[#0f0f0f] min-h-screen p-12 flex flex-col items-center justify-center font-sans">
+  
+  <div class="max-w-7xl w-full flex flex-col gap-10">
+    
+    <div class="flex justify-between items-end border-b border-white/5 pb-6">
+      <p class="text-white text-5xl font-black italic uppercase tracking-tighter">
+        ÚLTIMAS ACTUALIZACIONES
+      </p>
+      
+      <div class="flex gap-2">
+        <button class="p-3 border border-white/10 hover:bg-white/5 transition-colors text-white">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="p-3 border border-white/10 hover:bg-white/5 transition-colors text-white">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-6">
+      
+      <div class="flex-1 bg-[#161616] flex flex-col gap-6 p-8 border-b-2 border-transparent hover:border-[#ffcc00] transition-all group">
+        <div class="flex flex-col gap-2">
+          <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-[0.2em]">FICHAJES</p>
+          <p class="text-white text-2xl font-black italic uppercase leading-none tracking-tight group-hover:text-[#ffcc00] transition-colors">
+            LA BÚSQUEDA DEL PRÓXIMO 'GOLDEN BOY' SE INTENSIFICA
+          </p>
         </div>
+        <img src="/noticias1.png" class="w-full h-48 object-cover grayscale brightness-75 group-hover:grayscale-0 transition-all duration-500" alt="Scouting" />
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Ojeadores de ambos bandos fueron vistos en Lisboa anoche siguiendo a la sensación de 19 años apodada el próximo general del mediocampo.
+        </p>
+      </div>
+
+      <div class="flex-1 bg-[#161616] flex flex-col gap-6 p-8 border-b-2 border-transparent hover:border-[#ffcc00] transition-all group">
+        <div class="flex flex-col gap-2">
+          <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-[0.2em]">HISTORIA</p>
+          <p class="text-white text-2xl font-black italic uppercase leading-none tracking-tight group-hover:text-[#ffcc00] transition-colors">
+            REVISITANDO LA GUERRA DE CHAMPIONS DE 2011
+          </p>
+        </div>
+        <img src="/noticias2.png" class="w-full h-48 object-cover grayscale brightness-75 group-hover:grayscale-0 transition-all duration-500" alt="Champions" />
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Doce años desde la maratón de cuatro partidos más tóxica y tácticamente brillante en la historia de la rivalidad.
+        </p>
+      </div>
+
+      <div class="flex-1 bg-[#161616] flex flex-col gap-6 p-8 border-b-2 border-transparent hover:border-[#ffcc00] transition-all group">
+        <div class="flex flex-col gap-2">
+          <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-[0.2em]">INFORME PRE-PARTIDO</p>
+          <p class="text-white text-2xl font-black italic uppercase leading-none tracking-tight group-hover:text-[#ffcc00] transition-colors">
+            GOLPE POR LESIÓN EN LA LÍNEA DEFENSIVA DEL MADRID
+          </p>
+        </div>
+        <img src="/noticias3.png" class="w-full h-48 object-cover grayscale brightness-75 group-hover:grayscale-0 transition-all duration-500" alt="Injuries" />
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Una distensión muscular de último minuto obliga a un reajuste táctico para los visitantes mientras se preparan para el rugido del Camp Nou.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
     </section>
-    <section class="flex items-center py-25 px-10">
-        <div class="">
-            <div class="py-20">
-                <p class="font-bold text-5xl italic">ARCHIVO CINÉTICO</p>
-            </div>
-            <div class="flex justify-items-center">
-                <div class="flex 1 gap-8">
-                    <img src="/archivo cinetico1.png" alt="">
-                    <div>
-                        <p>LA ANATOMÍA DE UN GOL CLÁSICO: 2000-2024</p>
-                        <p>LARGOMETRAJE • 42 MINUTOS</p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-8">
-                    <div>
-                        <div>
-                            <img src="/archivo cinetico2.png" alt="">
-                        </div>
-                        <div>
-                            <p class="font-bold">El gol número 500 de Messi en el Bernabéu.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="/archivo cinetico3.png" alt="">
-                        </div>
-                        <div>
-                            <p class="font-bold">El regreso del rey (2017)</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="/archivo cinetico4.png" alt="">
-                        </div>
-                        <div>
-                            <p class="font-bold">Análisis de la clase magistral de Zidane</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section>
+        <div class="bg-[#0f0f0f] min-h-screen p-12 flex flex-col items-center justify-center font-sans">
+  
+  <div class="max-w-7xl w-full flex flex-col gap-8">
+    
+    <div class="flex flex-col gap-2">
+      <p class="text-white text-5xl font-black italic uppercase tracking-tighter">ARCHIVO</p>
+      <div class="flex items-center gap-4">
+        <div class="h-1 bg-[#ffcc00] w-16"></div>
+        <p class="text-[#ffcc00] text-5xl font-black italic uppercase tracking-tighter leading-none">KINÉTICO</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-8">
+      
+      <div class="flex-2 relative group cursor-pointer overflow-hidden aspect-video bg-black">
+        <img 
+          src="/archivo-cinetico1.png" 
+          class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" 
+          alt="Estadio" 
+        />
+        
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="bg-[#ffcc00] w-20 h-20 flex items-center justify-center group-hover:bg-white transition-colors">
+            <svg class="w-10 h-10 text-black fill-current" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
         </div>
+
+        <div class="absolute bottom-0 left-0 w-full p-10 from-black to-transparent">
+          <p class="text-white text-3xl font-black italic uppercase tracking-tight mb-2">
+            ANATOMÍA DE UN GOL EN EL CLÁSICO: 2000-2024
+          </p>
+          <div class="flex gap-4">
+            <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest">LARGOMETRAJE</p>
+            <p class="text-white/60 text-[10px] font-bold uppercase tracking-widest">• 42 MINS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-1 flex flex-col gap-6">
+        
+        <div class="flex gap-4 group cursor-pointer">
+          <div class="w-40 h-24 bg-[#1a1a1a] overflow-hidden relative">
+            <img src="/archivo-cinetico2.png" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" alt="Messi" />
+          </div>
+          <div class="flex flex-col gap-2 justify-center">
+            <p class="text-white text-sm font-black italic uppercase leading-tight group-hover:text-[#ffcc00]">
+              EL GOL 500 DE MESSI EN EL BERNABÉU
+            </p>
+            <p class="text-gray-500 text-[9px] font-bold uppercase tracking-widest">5:24 • DESTACADOS</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 group cursor-pointer">
+          <div class="w-40 h-24 bg-[#1a1a1a] overflow-hidden relative">
+            <img src="/archivo-cinetico3.png" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" alt="King" />
+          </div>
+          <div class="flex flex-col gap-2 justify-center">
+            <p class="text-white text-sm font-black italic uppercase leading-tight group-hover:text-[#ffcc00]">
+              EL REGRESO DEL REY EN 2017
+            </p>
+            <p class="text-gray-500 text-[9px] font-bold uppercase tracking-widest">8:12 • CINEMÁTICO</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 group cursor-pointer">
+          <div class="w-40 h-24 bg-[#1a1a1a] overflow-hidden relative border-l-2 border-[#ffcc00]">
+            <img src="/archivo-cinetico4.png" class="w-full h-48 object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" alt="Zidane" />
+          </div>
+          <div class="flex flex-col gap-2 justify-center">
+            <p class="text-white text-sm font-black italic uppercase leading-tight group-hover:text-[#ffcc00]">
+              ANÁLISIS: LA MASTERCLASS DE ZIDANE
+            </p>
+            <p class="text-gray-500 text-[9px] font-bold uppercase tracking-widest">12:45 • TÁCTICO</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
     </section>
 </Layout>

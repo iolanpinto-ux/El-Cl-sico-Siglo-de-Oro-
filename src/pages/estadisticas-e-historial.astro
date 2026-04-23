@@ -3,29 +3,67 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-    <section class="mb-16 py-15">
-        <div class="flex items-end gap-4 mb-2">
-            <p class="text-tertiary font-headline font-bold tracking-widest uppercase text-sm text-yellow-400">Archivo Historico</p>
+    <section>
+<div class="bg-[#0f0f0f] min-h-screen p-12 flex flex-col items-center justify-center font-sans">
+  
+  <div class="max-w-6xl w-full flex flex-col gap-2 mb-12">
+    <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-[0.3em]">
+      HISTORICAL ARCHIVE
+    </p>
+    <div class="flex flex-wrap gap-x-4 items-center leading-none">
+      <p class="text-white text-7xl font-black italic uppercase tracking-tighter">
+        ESTADÍSTICAS E
+      </p>
+      <p class="text-[#e21b22] text-7xl font-black italic uppercase tracking-tighter">
+        HISTORIAL
+      </p>
+    </div>
+  </div>
+
+  <div class="max-w-6xl w-full flex flex-col md:flex-row items-stretch">
+    
+    <div class="bg-[#1a1a1a] flex-1 p-12 flex flex-col justify-between gap-10 border-r border-white/5">
+      <div class="flex justify-between items-center">
+        <p class="text-white font-bold italic uppercase text-sm">FC BARCELONA</p>
+        <p class="text-[#ffcc00] text-5xl font-black italic">100</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="h-1.5 w-full bg-white/10">
+          <div class="h-full w-[45%] bg-gradient-to-r from-[#e21b22] to-[#00529b]"></div>
         </div>
-        <div class="text-7xl font-headline font-black uppercase tracking-tighter leading-none italic">
-            <p>ESTADISTICAS E HISTORIAL</p>
+        <p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">Victorias Totales</p>
+      </div>
+    </div>
+
+    <div class="relative flex-1 min-h-[300px] flex flex-col items-center justify-center text-center p-12 overflow-hidden">
+      <img src="/campo-futbol.jpg" class="absolute inset-0 w-full h-full object-cover opacity-20" alt="Background">
+      <div class="relative z-10 flex flex-col gap-8">
+        <div class="flex flex-col gap-1">
+          <p class="text-[#ffcc00] text-6xl font-black italic leading-none">254</p>
+          <p class="text-white/60 text-[9px] font-bold uppercase tracking-widest">Pastidos Oficiales</p>
         </div>
-    </section>
-    <section class=" flex gap-60 mb-20 bg-surface-container-low justify-center">
-            <div class="p-12 border-r-0 lg:border-r border-outline-variant/10">
-                    <p>FC BARCELONA        100</p>
-                    <p class="text-red-300">VICTORIAS TOTALES</p>
-            </div>
-            <div class="p-12 border-r-0 lg:border-r border-outline-variant/10">
-                    <p class="text-yellow-500 text-5xl font-bold">254</p>
-                    <p>PARTIDOS OFICIALES</p>
-                    <p>52</p>
-                    <p>EMPATES</p>
-            </div>           
-             <div class="p-12 border-r-0 lg:border-r border-outline-variant/10">
-                    <p>REAL MADRID        102</p>
-                    <p class="text-red-300">VICTORIAS TOTALES</p>
-            </div>
+        <div class="flex flex-col gap-1">
+          <p class="text-white text-3xl font-black italic leading-none">52</p>
+          <p class="text-white/60 text-[9px] font-bold uppercase tracking-widest">Empates</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#1a1a1a] flex-1 p-12 flex flex-col justify-between gap-10 border-l border-white/5">
+      <div class="flex justify-between items-center">
+        <p class="text-[#ffcc00] text-5xl font-black italic">102</p>
+        <p class="text-white font-bold italic uppercase text-sm">REAL MADRID</p>
+      </div>
+      <div class="flex flex-col gap-4 items-end">
+        <div class="h-1.5 w-full bg-white/10 flex justify-end">
+          <div class="h-full w-[48%] bg-white"></div>
+        </div>
+        <p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">Victorias Totales</p>
+      </div>
+    </div>
+
+  </div>
+</div>
     </section>
 
     <section class="bg-black text-white py-10 px-5 font-sans">
@@ -106,58 +144,80 @@ import Layout from "../layouts/Layout.astro"
     </div>
 </section>
     
-    <section class="py-40 px-55 items-end">
-        <p class="font-headline font-bold text-2xl uppercase tracking-tighter mb-8 flex items-center gap-2 text-yellow-500">HISTORIA: RESULTADOS RECIENTES</p>
+    <section>
+        <div class="bg-[#0f0f0f] min-h-screen p-12 flex flex-col items-center justify-center font-sans">
+  
+  <div class="max-w-4xl w-full flex flex-col gap-6">
+    
+    <div class="flex items-center gap-3 mb-2">
+      <div class="text-[#ffcc00]">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <p class="text-white text-2xl font-black italic uppercase tracking-tight">
+        RECENT RESULTS
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      
+      <div class="bg-[#1c1c1c] flex items-center justify-between p-8 rounded-sm group hover:bg-[#252525] transition-colors cursor-pointer">
+        <p class="text-gray-500 text-xs font-bold uppercase w-20">APR 24</p>
         
-        <div class="space-y-4">
-            <div class="flex items-center bg-sunface-container-low p-6 bg-[#1a1a1a] border border-gray-800 hover:translate-x-2 transition-transform cursor-pointer">
-                <div class="text-center text-xs font-bold uppercase opacity-40"> 
-                    <p>24 DE ABRIL</p>
-                 </div>
-                <div class="flex-1 items-center">
-                    <div> 
-                        <p class="font-bold uppercase text-right">REAL MADRID</p>
-                     </div>
-                    <div>
-                         <p class="text-center font-black text-2xl bg-surface-container-highest py-2 px-4 mx-8 italic">3-2</p>
-                     </div>
-                    <div>
-                         <p class="font-bold uppercase text-left">FC BARCELONA</p>
-                     </div>
-                </div>
-            </div>
-            <div class="flex items-center bg-sunface-container-low p-6 bg-[#1a1a1a] border border-gray-800 hover:translate-x-2 transition-transform cursor-pointer">
-                <div class="text-center text-xs font-bold uppercase opacity-40">
-                     <p>24 DE ENERO</p>
-                 </div>
-                <div class="flex-1 items-center">
-                    <div> 
-                        <p class="font-bold uppercase text-right">REAL MADRID</p>
-                     </div>
-                    <div>
-                         <p class="text-center font-black text-2xl bg-surface-container-highest py-2 px-4 mx-8 italic">4-1</p>
-                    </div>
-                    <div>
-                        <p class="font-bold uppercase text-left">FC BARCELONA</p>
-                    </div>
-                </div>
-            </div>
-            <div class="flex items-center bg-sunface-container-low p-6 bg-[#1a1a1a] border border-gray-800 hover:translate-x-2 transition-transform cursor-pointer">
-                <div class="text-center text-xs font-bold uppercase opacity-40">
-                     <p>23 DE OCTUBRE</p> 
-                </div>
-                <div class="flex-1 items-center">
-                    <div> 
-                        <p class="font-bold uppercase text-right">REAL MADRID</p>
-                     </div>
-                    <div> 
-                        <p class="text-center font-black text-2xl bg-surface-container-highest py-2 px-4 mx-8 italic">1-2</p> 
-                    </div>
-                    <div>
-                        <p class="font-bold uppercase text-left">FC BARCELONA</p>
-                    </div>
-                </div>
-            </div>
+        <div class="flex-1 flex items-center justify-center gap-12">
+          <p class="text-white font-black italic uppercase text-lg text-right w-40">REAL MADRID</p>
+          <div class="bg-[#2a2a2a] px-6 py-3 rounded-sm border border-white/5">
+            <p class="text-white text-3xl font-black italic">3 - 2</p>
+          </div>
+          <p class="text-gray-400 font-bold italic uppercase text-lg w-40">FC BARCELONA</p>
         </div>
+
+        <div class="text-[#ffcc00] w-20 flex justify-end">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="bg-[#1c1c1c] flex items-center justify-between p-8 rounded-sm group hover:bg-[#252525] transition-colors cursor-pointer">
+        <p class="text-gray-500 text-xs font-bold uppercase w-20">JAN 24</p>
+        
+        <div class="flex-1 flex items-center justify-center gap-12">
+          <p class="text-white font-black italic uppercase text-lg text-right w-40">REAL MADRID</p>
+          <div class="bg-[#2a2a2a] px-6 py-3 rounded-sm border border-white/5">
+            <p class="text-white text-3xl font-black italic">4 - 1</p>
+          </div>
+          <p class="text-gray-400 font-bold italic uppercase text-lg w-40">FC BARCELONA</p>
+        </div>
+
+        <div class="text-[#ffcc00] w-20 flex justify-end">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="bg-[#1c1c1c] flex items-center justify-between p-8 rounded-sm border-l-4 border-[#e21b22] group hover:bg-[#252525] transition-colors cursor-pointer">
+        <p class="text-gray-500 text-xs font-bold uppercase w-20">OCT 23</p>
+        
+        <div class="flex-1 flex items-center justify-center gap-12">
+          <p class="text-gray-400 font-bold italic uppercase text-lg text-right w-40">FC BARCELONA</p>
+          <div class="bg-[#2a2a2a] px-6 py-3 rounded-sm border border-white/5">
+            <p class="text-white text-3xl font-black italic">1 - 2</p>
+          </div>
+          <p class="text-white font-black italic uppercase text-lg w-40">REAL MADRID</p>
+        </div>
+
+        <div class="text-[#ffcc00] w-20 flex justify-end">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
     </section>
 </Layout>

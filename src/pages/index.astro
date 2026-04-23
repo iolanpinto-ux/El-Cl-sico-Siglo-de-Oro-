@@ -2,153 +2,270 @@
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from 'astro-icon/components'
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<section class="relative overflow-hidden flex px-32 py-18">
-		<img src="/estadio.png" class="absolute -z-1 w-full h-full left-0 top-0" alt="">
-		<div class="flex flex-col items-start flex-1">
+	<section class="">
+		<div class="relative min-h-screen bg-[#0a0a0a] flex items-center justify-center p-10 overflow-hidden">
+  
+  <img src="/estadio.png" class="absolute inset-0 w-full h-full object-cover opacity-30" alt="Estadio">
 
-			<p class="font-bold bg-red-700 text-white px-1 py-1 uppercase">Proximo encuentro</p>
-			<p class="font-black text-5xl italic">LA RIVALIDAD <br class="text-yellow-300">RENACIDA.</p>
+  <div class="relative z-10 w-full max-w-6xl flex flex-col gap-8">
+    
+    <div class="flex items-center gap-4">
+      <p class="bg-[#e21b22] text-white text-[10px] font-bold px-3 py-1 uppercase tracking-tighter italic">
+        Next Battle
+      </p>
+      <div class="h-[1px] bg-gray-600 w-16"></div>
+    </div>
 
-			<div>
-				<div>
-					<div class="flex flex-wrap flex-1 gap-12 items-center mb-12 py-6">
-						<div class="flex items-center bg-gray-800 px-4 py-4"><Icon name="barcelona" size={55} /></div>
-						<div><p>VS</p></div>
-						 <div></div>
-					</div>
+    <div class="flex flex-col leading-[0.85]">
+      <p class="text-white text-8xl font-black italic uppercase tracking-tighter">RIVALRY</p>
+      <p class="text-[#ffcc00] text-8xl font-black italic uppercase tracking-tighter">REBORN.</p>
+    </div>
 
-					<div class="flex flex-1">
-						<p class="bg-amber-300 text-black px-1">COMIENZA EL INICIO EN</p>
-						<div class="flex gap-8 ml-4">
-							<div>
-								<p class="text-xl font-black">04</p>
-								<p class="text-xs text-yellow-400">D</p>
-							</div>
-							<div>
-								<p class="text-xl font-black">12</p>
-								<p class="text-xs text-yellow-400">H</p>
-							</div>
-							<div>
-								<p class="text-xl font-black">45</p>
-								<p class="text-xs text-yellow-400">M</p>
-							</div>
-						</div>
-					</div>
-				</div>
+    <div class="flex flex-wrap items-center gap-12 mt-4">
+      
+      <div class="flex items-center gap-6">
+        <div class="bg-white p-4 rounded-sm">
+          <img src="/logo-fcb.png" class="w-12 h-12" alt="Logo 1">
+        </div>
+        <p class="text-white italic font-bold text-3xl">VS</p>
+        <div class="bg-[#1c2c3d] p-4 rounded-sm border border-gray-700">
+          <img src="/logo-rma.png" class="w-12 h-12" alt="Logo 2">
+        </div>
+      </div>
 
-				<div class="flex gap-4 mt-8">
-					<button class="bg-primary text-on-primary px-10 py-4 font-headline font-extrabold text-xl tracking-tighter uppercase hover:bg-surface-bright transition-all active:scale-95">Vista Previa</button>
-					<button class="bg-surface-container-highest/50 backdrop-blur-md text-on-surface px-10 py-4 font-headline font-bold text-xl tracking-tighter uppercase border border-white/10 hover:bg-white/10 transition-all|">Asientos Asegurados</button>
-				</div>
-			</div>
-		</div>
+      <div class="flex flex-col gap-1">
+        <p class="text-gray-400 text-[10px] font-bold uppercase">Kickoff in</p>
+        <div class="flex gap-4 items-baseline">
+          <div class="flex items-baseline gap-1">
+            <p class="text-white text-4xl font-bold italic">04</p><p class="text-[#ffcc00] text-xs font-bold uppercase">d</p>
+          </div>
+          <div class="flex items-baseline gap-1">
+            <p class="text-white text-4xl font-bold italic">12</p><p class="text-[#ffcc00] text-xs font-bold uppercase">h</p>
+          </div>
+          <div class="flex items-baseline gap-1">
+            <p class="text-white text-4xl font-bold italic">45</p><p class="text-[#ffcc00] text-xs font-bold uppercase">m</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<div class="flex flex-col items-start mt-20 gap-4 bg-[#1a1a1a] border border-gray-800 px-10 py-12">
-			<p class="text-3xl font-bold text-yellow-300 italic uppercase">El Clásico del Siglo de Oro</p>
-			<p class="text-xs font-bold uppercase">El enfrentamiento más esperado del año</p>
-			<button class="bg-primary text-on-primary px-10 py-4 font-headline font-extrabold text-xl bg-red-500">COMPRAR BOLETOS</button>
-		</div>
+    <div class="flex gap-4 mt-4">
+      <button class="bg-[#ffb3b3] text-[#0a0a0a] px-10 py-4 font-bold uppercase italic text-sm hover:bg-white transition-all">
+        Secure Seats
+      </button>
+      <button class="bg-transparent border border-gray-500 text-white px-10 py-4 font-bold uppercase italic text-sm hover:bg-white/10 transition-all">
+        Match Preview
+      </button>
+    </div>
+  </div>
+
+  <div class="absolute right-20 bottom-1/3 bg-[#1a1a1a]/90 border border-gray-800 p-6 rounded-sm w-72 flex flex-col gap-4">
+    <div class="flex justify-between items-center">
+      <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest">Win Probability</p>
+      <div class="w-4 h-4 bg-[#ffcc00] rounded-full"></div>
+    </div>
+    <div class="h-2 w-full flex">
+      <div class="bg-[#e21b22] w-[52%]"></div>
+      <div class="bg-[#00529b] w-[48%]"></div>
+    </div>
+    <div class="flex justify-between">
+      <p class="text-white text-[10px] font-bold">FCB 52%</p>
+      <p class="text-white text-[10px] font-bold">RMA 48%</p>
+    </div>
+  </div>
+
+</div>
 	</section>
 
-	<section class="py-24 bg-surface-container-low relative bg-gray-900">
-		<div class="flex items-end justify-between mb-16">
-			<p class="text-6xl font-black italic ">PAGINA DELANTERA</p>
-			<button class="text-yellow-600">Ver todas las noticias</button>
-		</div>
+	<section class="">
+		<div class="bg-[#121212] min-h-screen p-12 flex flex-col gap-10 items-center font-sans">
+  
+  <div class="max-w-7xl w-full flex justify-between items-end">
+    <div class="flex flex-col leading-[0.8]">
+      <p class="text-white text-6xl font-black italic uppercase tracking-tighter">PORTADA</p>
+      <p class="text-[#ffcc00] text-6xl font-black italic uppercase tracking-tighter">PRINCIPAL.</p>
+    </div>
+    <a href="#" class="text-[#ffcc00] text-xs font-bold uppercase tracking-widest border-b border-[#ffcc00] pb-1">
+      VER TODAS LAS NOTICIAS
+    </a>
+  </div>
 
+  <div class="max-w-7xl w-full flex flex-col md:flex-row gap-6">
+    
+    <div class="relative flex-2 md:w-2/3 overflow-hidden rounded-sm">
+      <img src="/estado-index.png" class="w-full h-[500px] object-cover opacity-80" alt="Análisis Táctico">
+      
+      <div class="absolute inset-0 from-black via-transparent to-transparent flex flex-col justify-end p-10 gap-4">
+        <p class="bg-[#ffcc00] text-black text-[10px] font-black uppercase px-2 py-1 self-start italic">
+          Análisis Táctico
+        </p>
+        <p class="text-white text-4xl font-black italic uppercase leading-none tracking-tighter max-w-2xl">
+          El Ajedrez del Mediocampo: Xavi vs Ancelotti
+        </p>
+        <p class="text-gray-300 text-sm max-w-xl">
+          Analizamos el dominio geométrico del 4-3-3 frente a la transición de presión alta del rombo 4-4-2 antes del choque en el Bernabéu.
+        </p>
+      </div>
+    </div>
 
-		<div class="flex items-start flex-1 gap-5">
-			<div class="relative overflow-hidden pt-45"> 
-				<img src="/estado-index.png" class="absolute z-1 w-full h-full top-0  left-0 object-cover" alt="">
-				<div class="flex flex-col gap-4 px-10 py-12 z-10">
-					<p class="bg-amber-400 text-xs text-black px-3 py-1">Analisis tactico</p>
-					<p class="text-5x1 font-black">EL PARTIDO DE AJEDREZ DEL MEDIO CAMPO: XAVI VS ANCELOTTI.</p>
-					<p class="text-on-surface-variant max-w-xl font-medium leading-relaxed text-red-300">
-						Analizando el dominio geometrico del 4-3-3 contra la
-						transicion de alta presion del rombo 4-4-2 antes del choque
-						en el Bernabeu
-					</p>
-				</div>
-			</div>
+    <div class="flex flex-col gap-6 md:w-1/3">
+      
+      <div class="bg-[#1c1c1c] flex flex-col gap-4 p-8 border-l-4 border-[#e21b22] relative h-full">
+        <p class="text-[#e21b22] text-[10px] font-bold uppercase tracking-widest">Estado del Jugador</p>
+        <p class="text-white text-xl font-black italic uppercase leading-tight tracking-tighter">
+          Bellingham declarado apto para el Clásico
+        </p>
+        <p class="text-gray-400 text-xs">
+          La estrella inglesa completó hoy la sesión de entrenamiento total en Valdebebas.
+        </p>
+        <div class="absolute right-4 top-4 opacity-10">
+            <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+      </div>
 
-			<div class="col-span-13 lg:col-span-4 flex flex-col gap-6 ">
+      <div class="bg-[#2a2a2a] flex flex-col gap-4 p-8 border-l-4 border-gray-500 relative h-full">
+        <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest">Leyendas</p>
+        <p class="text-white text-xl font-black italic uppercase leading-tight tracking-tighter">
+          El Icónico 5-0: Diez años después
+        </p>
+        <p class="text-gray-400 text-xs">
+          Recordando la noche en que el Camp Nou presenció la perfección futbolística.
+        </p>
+        <div class="absolute right-4 top-4 opacity-10">
+            <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+      </div>
 
-				<div class="flex bg-[#1a1a1a] p-6 border border-gray-800">
-					<p class="text-red-600 text-xs font-bold uppercase flex-1">Actualizaciones del jugador</p>
-					<p class="flex-2">BELLINGHAM DECLARADO APTO PARA REGRESAR AL CLASICO</p>
-					<p class="flex-3 text-sm text-white/50 leading-relaxed">La estrella inglesa completa hoy su sesión de entrenamiento completa en Valdebebas.</p>
-				</div>
-
-				<div class="flex bg-[#1a1a1a] p-6 border border-gray-800">
-					<p class="text-yellow-500 text-xs font-bold uppercase flex-1">Leyendas</p>
-					<p class="flex-2">EL ICONICO 5-0: DIEZ AÑOS DESPUES</p>
-					<p class="flex-3 text-sm text-white/50 leading-relaxed">Repasando los pasos de aquella noche en que el Camp Nou fue testigo de la perfección futbolística.</p>
-				</div>
-
-			</div>
-		</div>
+    </div>
+  </div>
+</div>
 	</section>
 
-	<section class="py-32 bg-background items-center">
-		<div class="flex flex-1 gap-15 container mx-auto px-10">
-			<div class="col-span-12 lg:col-span-4 items-center">
-				<p class="text-6xl font-black font-headline italic uppercase mb-8">DOMINIO DE LA LIGA.</p>
-				<p class="text-on-surface-variant font-medium leading-relaxed mb-10 text-red-400">Los dos gigantes vuelven a distanciarse del resto. Una lucha a dos bandas que define la elite del futbol español.</p>
-				
-				<div class="space-y-6">
-					<div class="bg-surface-container p-6 border-l-4 border-primary-container bg-[#1a1a1a]">
-						<div class="flex justify-between items-center mb-2">
-							<p class="font-headline font-bold uppercase italic"> FC Barcelona</p>
-							<p class="font-headline font-bold uppercase italic">78 PUNTOS</p>
-						</div>
-					</div>
+	<section>
+<div class="bg-[#0f0f0f] min-h-screen p-12 flex justify-center items-center font-sans">
+  
+  <div class="max-w-7xl w-full flex flex-col lg:flex-row gap-16 items-center">
+    
+    <div class="flex flex-col gap-10 flex-1">
+      
+      <div class="flex flex-col gap-4">
+        <p class="text-white text-5xl font-black italic uppercase tracking-tighter leading-none">
+          DOMINIO DE LA LIGA
+        </p>
+        <div class="w-3 h-3 bg-[#e21b22] rounded-full"></div>
+        <p class="text-gray-400 text-lg max-w-md leading-tight">
+          Los dos gigantes vuelven a distanciarse del resto. Una lucha a dos bandas que define la élite del fútbol español.
+        </p>
+      </div>
 
-					<div class="bg-surface-container p-6 border-l-4 border-primary-container bg-[#1a1a1a]">
-						<div class="flex justify-between items-center mb-2">
-							<p class="font-headline font-bold uppercase italic">Real Madrid</p>
-							<p class="font-headline font-bold uppercase italic">76 PUNTOS</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="items-center">
-				<img src="/tabla.png" alt="">
-			</div>
-		</div>
+      <div class="flex flex-col gap-4">
+        
+        <div class="bg-[#1c1c1c] p-6 border-l-4 border-[#e21b22] flex flex-col gap-3 rounded-r-sm">
+          <div class="flex justify-between items-end">
+            <p class="text-white font-bold italic uppercase text-sm">FC BARCELONA</p>
+            <p class="text-[#ffcc00] font-black italic text-2xl">78 PUNTOS</p>
+          </div>
+          <div class="w-full h-1.5 bg-gray-800">
+            <div class="bg-[#e21b22] h-full w-[90%]"></div>
+          </div>
+        </div>
+
+        <div class="bg-[#1c1c1c] p-6 border-l-4 border-gray-600 flex flex-col gap-3 rounded-r-sm">
+          <div class="flex justify-between items-end">
+            <p class="text-white font-bold italic uppercase text-sm">REAL MADRID</p>
+            <p class="text-gray-300 font-black italic text-2xl">75 PUNTOS</p>
+          </div>
+          <div class="w-full h-1.5 bg-gray-800">
+            <div class="bg-gray-500 h-full w-[85%]"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="flex-1 w-full lg:w-auto">
+      <div class="bg-[#1c1c1c] p-2 rounded-sm shadow-2xl overflow-hidden flex items-center justify-center">
+        <img 
+          src="/tabla.png" 
+          alt="Tabla de posiciones La Liga" 
+          class="w-full h-auto opacity-90 object-contain"
+        />
+      </div>
+    </div>
+
+  </div>
+</div>
 	</section>
 
-	<section class="py-24 bg-surface-container-lowest bg-gray-900">
-		<div class="container mx-auto px-20">
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
-				<div class="bg-surface-container p-12 flex flex-col items-center text-center bg-[#1a1a1a] border border-gray-800">
-						<p class="text-yellow-300 text-tertiary font-black tracking-widest uppercase mb-4 text-xs">Goles marcados</p>
-						<div class="flex items-end gap-2 mb-6">
-							<p class="text-6xl font-black font-headline italic">72</p>
-							<p class="text-white/20 text-3xl font-headline italic">/68</p>
-						</div>
-				</div>
-				<div class="bg-surface-container p-12 flex flex-col items-center text-center bg-[#1a1a1a] border border-gray-800">
-						<p class="text-yellow-300 text-tertiary font-black tracking-widest uppercase mb-4 text-xs">Sabanas limpias</p>
-						<div class="flex items-end gap-2 mb-6">
-							<p class="text-6xl font-black font-headline italic">14</p>
-							<p class="text-white/20 text-3xl font-headline italic">/16</p>
-						</div>
-				</div>
-				<div class="bg-surface-container p-12 flex flex-col items-center text-center bg-[#1a1a1a] border border-gray-800">
-						<p class="text-yellow-300 text-tertiary font-black tracking-widest uppercase mb-4 text-xs">Oportunidades Creadas</p>
-						<div class="flex items-end gap-2 mb-6">
-							<p class="text-6xl font-black font-headline italic">342</p>
-							<p class="text-white/20 text-3xl font-headline italic">/318</p>
-						</div>
-				</div>
-			</div>
-		</div>
+	<section>
+		<div class="bg-[#0f0f0f] min-h-screen p-12 flex justify-center items-center font-sans">
+  
+  <div class="flex flex-col md:flex-row gap-6 w-full max-w-7xl">
+    
+    <div class="bg-[#1c1c1c] flex flex-col gap-5 p-10 rounded-sm flex-1 text-center border-b-2 border-gray-700">
+      <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest leading-none">
+        Goles Marcados
+      </p>
+      
+      <div class="flex items-baseline justify-center gap-1.5 leading-none">
+        <p class="text-white text-7xl font-black italic uppercase tracking-tighter">
+          72
+        </p>
+        <p class="text-white text-3xl font-black italic uppercase tracking-tighter opacity-70">
+          / 68
+        </p>
+      </div>
+      
+      <div class="h-1.5 w-full flex mt-auto">
+        <div class="bg-[#e21b22] h-full w-[80%] rounded-l-sm"></div>
+        <div class="bg-gray-700 h-full flex-1 rounded-r-sm"></div>
+      </div>
+    </div>
+
+    <div class="bg-[#1c1c1c] flex flex-col gap-5 p-10 rounded-sm flex-1 text-center border-b-2 border-gray-700">
+      <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest leading-none">
+        Sábanas Limpias
+      </p>
+      
+      <div class="flex items-baseline justify-center gap-1.5 leading-none">
+        <p class="text-white text-7xl font-black italic uppercase tracking-tighter">
+          14
+        </p>
+        <p class="text-white text-3xl font-black italic uppercase tracking-tighter opacity-70">
+          / 16
+        </p>
+      </div>
+      
+      <div class="h-1.5 w-full flex mt-auto">
+        <div class="bg-[#e21b22] h-full w-[70%] rounded-l-sm"></div>
+        <div class="bg-gray-700 h-full flex-1 rounded-r-sm"></div>
+      </div>
+    </div>
+
+    <div class="bg-[#1c1c1c] flex flex-col gap-5 p-10 rounded-sm flex-1 text-center border-b-2 border-gray-700">
+      <p class="text-[#ffcc00] text-[10px] font-bold uppercase tracking-widest leading-none">
+        Oportunidades Creadas
+      </p>
+      
+      <div class="flex items-baseline justify-center gap-1.5 leading-none">
+        <p class="text-white text-7xl font-black italic uppercase tracking-tighter">
+          342
+        </p>
+        <p class="text-white text-3xl font-black italic uppercase tracking-tighter opacity-70">
+          / 318
+        </p>
+      </div>
+      
+      <div class="h-1.5 w-full flex mt-auto">
+        <div class="bg-[#e21b22] h-full w-[90%] rounded-l-sm"></div>
+        <div class="bg-gray-700 h-full flex-1 rounded-r-sm"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
 	</section>
 </Layout>
