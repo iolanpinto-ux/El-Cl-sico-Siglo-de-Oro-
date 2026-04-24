@@ -33,26 +33,54 @@ import "../styles/global.css";
 		</header>
 
 		<slot />
-		<footer class="bg-[#0e0e0e] w-full py-16 border-t-0 tonal shift from surface-container-low to surface-container-lowest">
-			<div class="grid grid-cols-4 gap-8 px-20 max-w-7xl mx-auto">
-				<div>
-					<div class="text-xl font-bold text-[#e9c349] mb-6 font-headline">El Clasico</div>
-					<p class="text-white/40 text-xs font-label leading-relaxed uppercase tracking-widest">La experiencia digital definitiva para la mayor rivalidad deportiva del planeta.</p>
-				</div>
-				<div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
-					<p class="text-[#A81E2C] font-bold text-xs tracking-[0.2em] mb-2 uppercase">recursos</p>
-				</div>
-				<div>
-					<div></div>
-					<p class="text-[#A81E2C] font-bold text-xs tracking-[0.2em] mb-2 uppercase">archivo</p>
-				</div>
-				<div class="col-span-4 lg:col-span-1">
-					<div class="bg-surface-container p-6 border-l-2 border-tertiary">
-						<p class="text-xs font-bold tracking-widest text-tertiary block mb-4 uppercase">MANTÉNGASE CONECTADO</p>
-					</div>
-				</div>
-				<div></div>
-			</div>
+		<footer class="">
+			<div class="bg-black py-16 px-20 flex flex-col gap-12">
+  
+  <div class="flex justify-between items-start gap-10">
+    
+    <div class="flex flex-col gap-4 w-1/4">
+      <p class="text-yellow-500 font-bold uppercase text-lg">El Clásico</p>
+      <p class="text-gray-500 text-xs leading-relaxed uppercase">
+        La experiencia digital definitiva para la rivalidad deportiva más grande del mundo.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <p class="text-red-700 font-bold uppercase text-xs">Recursos</p>
+      <div class="flex flex-col gap-3">
+        <p class="text-gray-400 text-xs uppercase cursor-pointer">Política de Privacidad</p>
+        <p class="text-gray-400 text-xs uppercase cursor-pointer">Términos de Servicio</p>
+        <p class="text-gray-400 text-xs uppercase cursor-pointer">Publicidad</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <p class="text-red-700 font-bold uppercase text-xs">Archivo</p>
+      <div class="flex flex-col gap-3">
+        <p class="text-gray-400 text-xs uppercase cursor-pointer">Contáctanos</p>
+        <p class="text-gray-400 text-xs uppercase cursor-pointer">Hemeroteca</p>
+        <p class="text-gray-400 text-xs uppercase cursor-pointer">Clubes Asociados</p>
+      </div>
+    </div>
+
+    <div class="bg-zinc-900 border-l-2 border-yellow-600 px-8 py-6 flex flex-col gap-4 w-64">
+      <p class="text-yellow-500 text-xs font-bold uppercase">Mantente Conectado</p>
+      <div class="flex gap-4">
+        <div class="text-gray-500 text-lg">📢</div>
+        <div class="text-gray-500 text-lg">🎥</div>
+        <div class="text-gray-500 text-lg">📶</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flex justify-center border-t border-zinc-800 pt-8">
+    <p class="text-zinc-700 text-[10px] uppercase tracking-widest text-center">
+      © 2024 El Clásico Editorial. Todos los derechos reservados. Una experiencia premium sin fronteras.
+    </p>
+  </div>
+
+</div>
 		</footer>
 	</body>
 </html>
